@@ -1,4 +1,4 @@
-# Sistem Manajemen Kas (Laravel)
+# Sistem Manajemen Kas | DIFERENSIASA APP (Laravel)
 
 Proyek ini adalah aplikasi berbasis web yang dikembangkan menggunakan framework Laravel untuk mengelola pencatatan kas secara digital dan efisien.
 
