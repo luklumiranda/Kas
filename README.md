@@ -2,6 +2,9 @@
 
 Proyek ini adalah aplikasi berbasis web yang dikembangkan menggunakan framework Laravel untuk mengelola pencatatan kas secara digital dan efisien.
 
+## Base URL
+[http://localhost/](http://127.0.0.1:8000)
+
 ## Aksi & Fitur Utama
 Aplikasi ini memungkinkan pengguna untuk mengelola keuangan dengan kontrol penuh melalui aksi-aksi berikut:
 
