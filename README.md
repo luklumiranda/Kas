@@ -15,4 +15,5 @@ Visualisasi Saldo: Menampilkan total saldo akhir secara otomatis berdasarkan kal
 
 ## Sequence Diagram (Logika Aplikasi)
 
-## 📸 Screenshot
+## Tampilan Web
+<img width="2858" height="1589" alt="image" src="https://github.com/user-attachments/assets/30a74131-e9a6-4d0b-b1f2-196953b7a54e" />
