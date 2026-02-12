@@ -1,3 +1,7 @@
+# Sistem Manajemen Kas (Laravel)
+
+Proyek ini adalah aplikasi berbasis web yang dikembangkan menggunakan framework Laravel untuk mengelola pencatatan kas secara digital dan efisien.
+
 ## Aksi & Fitur Utama
 Aplikasi ini memungkinkan pengguna untuk mengelola keuangan dengan kontrol penuh melalui aksi-aksi berikut:
 
