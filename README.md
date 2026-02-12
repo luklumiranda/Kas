@@ -11,13 +11,4 @@ Visualisasi Saldo: Menampilkan total saldo akhir secara otomatis berdasarkan kal
 
 ## Sequence Diagram (Logika Aplikasi)
 
-## 🔑 Login
-Gunakan akun berikut buat masuk:
-
-| Username         | Password |
-|------------------|----------|
-| manajer          | admin    |
-| bendahara        | admin    |
-| siswa            | admin    |
-
 ## 📸 Screenshot
