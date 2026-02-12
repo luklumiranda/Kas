@@ -18,5 +18,8 @@ Visualisasi Saldo: Menampilkan total saldo akhir secara otomatis berdasarkan kal
 
 ## Sequence Diagram (Logika Aplikasi)
 
+## ERD
+<img width="1506" height="1145" alt="erd_kas" src="https://github.com/user-attachments/assets/e5b6c0f9-75e2-4cb8-9625-6b4f7b824517" />
+
 ## Tampilan Web
 <img width="2858" height="1589" alt="image" src="https://github.com/user-attachments/assets/30a74131-e9a6-4d0b-b1f2-196953b7a54e" />
