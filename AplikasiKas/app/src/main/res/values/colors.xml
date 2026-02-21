@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dash_green">#2ECC71</color>
+    <color name="dash_blue">#3498DB</color>
+    <color name="dash_red">#E74C3C</color>
+    <color name="dash_yellow">#F1C40F</color>
+    <color name="text_dark">#333333</color>
+    <color name="bg_grey">#F4F6F9</color>
+    <color name="btn_blue">#0d6efd</color>
+    <color name="btn_green">#198754</color>
+    <color name="btn_yellow">#ffc107</color>
+    <color name="btn_red">#dc3545</color>
+    <color name="btn_cyan">#0dcaf0</color>
+    <color name="btn_grey">#6c757d</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="primary_blue">#1976D2</color>
+    <color name="gray_stroke">#E0E0E0</color>
+    <color name="text_hint">#9E9E9E</color>
+</resources>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:rotation="180"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Edit Laporan Transparansi"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Judul Laporan -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Judul Laporan *"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_input_field"
+                        android:paddingHorizontal="12dp"
+                        android:textSize="14sp" />
+
+                    <!-- Deskripsi -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Deskripsi"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_input_field"
+                        android:gravity="top"
+                        android:padding="12dp"
+                        android:textSize="14sp" />
+
+                    <!-- Tanggal -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tanggal Mulai *"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etStartDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/bg_input_field"
+                                android:drawableEnd="@drawable/ic_calender"
+                                android:focusable="false"
+                                android:paddingHorizontal="12dp"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tanggal Akhir *"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etEndDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/bg_input_field"
+                                android:drawableEnd="@drawable/ic_calender"
+                                android:focusable="false"
+                                android:paddingHorizontal="12dp"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Checkbox Status Aktif -->
+                    <CheckBox
+                        android:id="@+id/cbIsActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Aktifkan laporan ini"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <!-- Public Link Info (Alert Info) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="#E1F5FE"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Link Publik:"
+                            android:textColor="#01579B"
+                            android:textStyle="bold"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvPublicLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="http://example.com/laporan-publik/token-123"
+                            android:textColor="#01579B"
+                            android:textSize="12sp"
+                            android:fontFamily="monospace" />
+                    </LinearLayout>
+
+                    <!-- Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnUpdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="#0D6EFD"
+                            android:text="Update"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            app:cornerRadius="4dp"
+                            app:icon="@drawable/ic_money"
+                            app:iconSize="16dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#6C757D"
+                            android:text="Batal"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            app:cornerRadius="4dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

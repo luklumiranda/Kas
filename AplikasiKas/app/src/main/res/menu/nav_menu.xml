@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard Keuangan" />
+
+    <item android:title="MANAJEMEN KAS &amp; PENGELUARAN">
+        <menu>
+            <item
+                android:id="@+id/nav_tagihan"
+                android:icon="@drawable/ic_bill"
+                android:title="Manajemen Tagihan" />
+            <item
+                android:id="@+id/nav_catat"
+                android:icon="@drawable/ic_money"
+                android:title="Pencatatan Pengeluaran" />
+            <item
+                android:id="@+id/nav_kategori"
+                android:icon="@drawable/ic_money"
+                android:title="Kategori Pengeluaran" />
+            <item
+                android:id="@+id/nav_laporan"
+                android:icon="@drawable/ic_report"
+                android:title="Laporan Transparansi" />
+        </menu>
+    </item>
+
+    <item android:title="NOTIFIKASI &amp; KOMUNIKASI">
+        <menu>
+            <item
+                android:id="@+id/nav_telegram"
+                android:icon="@drawable/ic_telegram"
+                android:title="Broadcast Telegram" />
+        </menu>
+    </item>
+
+    <item android:title="DATA MASTER">
+        <menu>
+            <item
+                android:id="@+id/nav_siswa"
+                android:icon="@drawable/ic_siswa"
+                android:title="Siswa" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:rotation="180"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Detail Pengeluaran"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Information Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kategori:"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/tvDetailCategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kategori"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Deskripsi:"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/tvDetailDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Deskripsi pengeluaran"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tanggal:"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/tvDetailDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="01/01/2024"
+                                android:layout_marginBottom="12dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jumlah:"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/tvDetailAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 0"
+                                android:textColor="#DC3545"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dicatat oleh:"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/tvDetailRecordedBy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Admin"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tanggal Input:"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/tvDetailInputDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="01/01/2024 00:00"
+                                android:layout_marginBottom="12dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutNotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D1ECF1"
+                        android:padding="12dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Catatan:"
+                            android:textStyle="bold"
+                            android:textColor="#0C5460"/>
+                        <TextView
+                            android:id="@+id/tvDetailNotes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ini adalah catatan pengeluaran."
+                            android:textColor="#0C5460"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Receipts Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvReceiptTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F8F9FA"
+                        android:padding="12dp"
+                        android:text="Bukti Nota (0 file)"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DEE2E6"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tvNoReceipts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak ada bukti nota"
+                            android:textAlignment="center"
+                            android:textColor="#6C757D"
+                            android:padding="16dp"
+                            android:visibility="gone"/>
+
+                        <!-- Placeholder for Receipts Grid (simulated) -->
+                        <LinearLayout
+                            android:id="@+id/layoutReceiptsGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- This would be a RecyclerView in a real app,
+                                 but for detail view we'll just show placeholders -->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginEnd="8dp">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/ic_report"
+                                    android:padding="8dp"
+                                    android:background="#E9ECEF" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="nota1.jpg"
+                                    android:textSize="10sp"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEditExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#FFC107"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="4dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBackToList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:backgroundTint="#6C757D"
+                    android:text="Kembali"
+                    android:textAllCaps="false"
+                    app:cornerRadius="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

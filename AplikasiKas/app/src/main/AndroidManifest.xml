@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_angkatan3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_angkatan3"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AplikasiKas"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".EditStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddExpenseCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditExpenseCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpenseDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditTagihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTagihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddLaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditLaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PublicLaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TelegramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KategoriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PencatatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SiswaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TagihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
