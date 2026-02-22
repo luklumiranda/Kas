@@ -14,11 +14,11 @@ Pencatatan Presisi: Setiap transaksi mencatat nominal, kategori (Masuk/Keluar), 
 
 Flowchart
 
-<img width="687" height="1294" alt="image" src="https://github.com/user-attachments/assets/9657a5fb-4ca4-47b6-b85f-6686e611e5e5" />
+<img width="787" height="1194" alt="image" src="https://github.com/user-attachments/assets/9657a5fb-4ca4-47b6-b85f-6686e611e5e5" />
 
 Use Case Diagram
 
-<img width="264" height="606" alt="image" src="https://github.com/user-attachments/assets/edc9c8cc-4086-4ce5-bb9b-1578f0f75cd3" />
+<img width="164" height="506" alt="image" src="https://github.com/user-attachments/assets/edc9c8cc-4086-4ce5-bb9b-1578f0f75cd3" />
 
 Validasi Data: Sistem memastikan nominal yang diinput tidak bernilai negatif dan form tidak kosong sebelum disimpan ke database.
 
@@ -38,7 +38,7 @@ Berikut adalah gambaran bagaimana data transaksi dan pengguna saling terhubung d
 
 Catatan: Diagram ini menunjukkan relasi antara tabel users (pengelola) dengan tabel transactions (pemasukan/pengeluaran).
 
-<img width="923" height="702" alt="image" src="https://github.com/user-attachments/assets/589865ea-6e07-4897-b263-b0df2d38a0c8" />
+<img width="823" height="602" alt="image" src="https://github.com/user-attachments/assets/589865ea-6e07-4897-b263-b0df2d38a0c8" />
 
 Engine: PHP 8.2+
 
@@ -46,15 +46,15 @@ Frontend: Blade Templating Engine dengan integrasi CSS/Bootstrap untuk antarmuka
 
 Halaman Login
 
-<img width="902" height="449" alt="image" src="https://github.com/user-attachments/assets/2b8b2930-f394-4a6c-8465-318244c3e409" />
+<img width="802" height="349" alt="image" src="https://github.com/user-attachments/assets/2b8b2930-f394-4a6c-8465-318244c3e409" />
 
-<img width="648" height="1454" alt="image" src="https://github.com/user-attachments/assets/405b4e7f-97af-4be1-97b8-6006c1ec156f" />
+<img width="448" height="1254" alt="image" src="https://github.com/user-attachments/assets/405b4e7f-97af-4be1-97b8-6006c1ec156f" />
 
 Halaman Dashboard
 
-<img width="905" height="425" alt="image" src="https://github.com/user-attachments/assets/3544939e-a0c4-44e3-bb84-63591de5acb9" />
+<img width="805" height="325" alt="image" src="https://github.com/user-attachments/assets/3544939e-a0c4-44e3-bb84-63591de5acb9" />
 
-<img width="650" height="1454" alt="image" src="https://github.com/user-attachments/assets/e8d4e90d-625c-4926-a348-e5640bb8054b" />
+<img width="450" height="1254" alt="image" src="https://github.com/user-attachments/assets/e8d4e90d-625c-4926-a348-e5640bb8054b" />
 
 🏗️ Struktur Arsitektur (Alur Kerja)
 Aplikasi ini mengikuti pola MVC (Model-View-Controller):
